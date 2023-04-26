@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int b,l;
+
+    printf("Enter the height of the rectangle: ");
+    scanf("%d", &l);
+    printf("Enter the width of the rectangle: ");
+    scanf("%d", &b);
+    printf("\n");
+
+    for (int i = 0; i < b; i++) {
+        for (int j = 0; j < l; j++) {
+            if (i == 0 || i == b - 1 || j == 0 || j == l - 1) {
+                printf(" # ");
+            } else {
+                printf("   ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
